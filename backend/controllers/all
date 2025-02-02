@@ -1,0 +1,47 @@
+export const getAllPosts = async (req, res) => {
+	try {
+		// Vérifiez que req.user est défini
+		if (!req.user) {
+			return res.status(401).json({ error: "Utilisateur non authentifié" });
+		}
+
+		// Récupération des posts en fonction de l'audience et de l'utilisateur connecté
+		const posts = await Post.find({
+			$or: [
+				{ audience: "public" }, // Posts publics (visibles par tout le monde)
+				{
+					audience: "friends",
+					user: { $in: req.user.followers }, // Posts des amis (visibles par les followers)
+				},
+				{
+					audience: "private",
+					user: req.user.id, // Posts privés (visibles uniquement par l'utilisateur)
+				},
+			],
+		})
+			.sort({ createdAt: -1 }) // Trie les posts du plus récent au plus ancien
+			.populate({
+				path: "user",
+				select: "-password", // Exclut le mot de passe de l'utilisateur
+			})
+			.populate({
+				path: "comments", // Remplit les commentaires associés au post
+				populate: {
+					path: "user", // Remplit l'utilisateur qui a posté chaque commentaire
+					select: "-password", // Exclut le mot de passe de l'utilisateur des commentaires
+				},
+			});
+
+
+		// Si aucun post n'est trouvé
+		if (posts.length === 0) {
+			return res.status(200).json([]); // Retourne un tableau vide
+		}
+
+		// Retourne les posts avec les commentaires
+		res.status(200).json(posts);
+	} catch (error) {
+		console.log("Erreur dans getAllPosts :", error);
+		res.status(500).json({ error: "Erreur interne du serveur" });
+	}
+};
