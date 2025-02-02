@@ -1,0 +1,9 @@
+@import url("../node_modules/@cometchat/chat-uikit-react/dist/styles/css-variables.css");
+
+:root {
+
+     --cometchat-primary-color: #0c314b;
+     --cometchat-extended-primary-color-500: #366d94;
+    
+}
+

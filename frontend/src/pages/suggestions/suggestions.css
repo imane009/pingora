@@ -1,0 +1,165 @@
+/* Suggestions Container */
+
+.suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    max-width: fit-content;
+}
+
+
+
+
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal Content */
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%;
+    position: relative;
+}
+
+/* Close Modal Button */
+.close-modal {
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    
+    cursor: pointer;
+    
+}
+
+.close-modal:hover {
+    color: #000;
+    
+}
+
+/* Layout for each person in the modal */
+.modal-personne {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Person Image in Modal */
+.modal-personne img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Name and Button */
+.modal-personne p {
+    flex: 1;
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.modal-personne button {
+    background-color:#1a3d5e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-personne button:hover {
+    background-color: #1a3d5e;;
+}
+
+
+/* Each Person in Suggestions */
+.personne {
+    
+    align-items: center;
+    margin: 10px;
+    background-color: #fff;
+    
+    border: none;
+    padding: 10px;
+    
+}
+
+/* Person Image */
+.personne img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Person Name */
+.personne p {
+    flex: 1;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+/* Action Button */
+.personne button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    background-color:#1a3d5e;;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.personne button:hover {
+    background-color:#1a3d5e;;
+}
+
+.open-modal {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #1a3d5e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-modal:hover {
+    background-color: #154057;
+}

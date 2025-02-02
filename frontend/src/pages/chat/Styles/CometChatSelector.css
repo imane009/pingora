@@ -1,0 +1,309 @@
+.selector-wrapper .cometchat-conversations .cometchat-list__header-menu .cometchat-button__icon {
+    background: var(--cometchat-icon-color-primary);
+  }
+  
+  .cometchat-conversations .cometchat-list__header-menu .cometchat-button__icon:hover {
+    background: var(--cometchat-icon-color-highlight);
+  }
+  
+  .cometchat-list__header-search-bar {
+    border-right: none;
+  }
+  
+  .cometchat .cometchat-menu-list__sub-menu-list-item {
+    text-align: left;
+  }
+  
+  .cometchat .cometchat-conversations .cometchat-menu-list__sub-menu-list {
+    width: 212px;
+    top: 40px !important;
+    left: 172px !important;
+  }
+  
+  #logged-in-user {
+    border-bottom: 2px solid var(--cometchat-border-color-default, #E8E8E8);
+  }
+  
+  #logged-in-user .cometchat-menu-list__sub-menu-item-title,
+  #logged-in-user .cometchat-menu-list__sub-menu-list-item {
+    cursor: default;
+  }
+  
+  .cometchat-menu-list__sub-menu-list-item-icon-log-out {
+    background-color: var(--cometchat-error-color, #F44649);
+  }
+  
+  .cometchat-menu-list__sub-menu-item-title-log-out {
+    color: var(--cometchat-error-color, #F44649)
+  }
+  
+  .chat-menu .cometchat .cometchat-menu-list__sub-menu-item-title {
+    cursor: pointer;
+  }
+  
+  .chat-menu .cometchat .cometchat-menu-list__sub-menu {
+    box-shadow: none;
+  }
+  
+  .chat-menu .cometchat .cometchat-menu-list__sub-menu-icon {
+    background-color: var(--cometchat-icon-color-primary, #141414);
+    width: 24px;
+    height: 24px;
+  }
+  .conversations__header {
+    display: flex;
+    width: 100%;
+    padding: 8px 16px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 10px;
+  }
+  .conversations__header__title {
+    overflow: hidden;
+    color: #141414;
+    text-overflow: ellipsis;
+    font: 700 24px Roboto;
+  }
+  .conversations__header .cometchat-button .cometchat-button__icon {
+    background: #141414;
+  }
+  .conversations__header .cometchat-button{
+    width: 24px;
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    display: block;
+  }
+
+
+  .selector-wrapper .cometchat-conversations .cometchat-list__header-menu .cometchat-button__icon {
+    background: var(--cometchat-icon-color-primary);
+  }
+  
+  .cometchat-conversations .cometchat-list__header-menu .cometchat-button__icon:hover {
+    background: var(--cometchat-icon-color-highlight);
+  }
+  
+  .cometchat-list__header-search-bar {
+    border-right: none;
+  }
+  
+  .cometchat .cometchat-menu-list__sub-menu-list-item {
+    text-align: left;
+  }
+  
+  .cometchat .cometchat-conversations .cometchat-menu-list__sub-menu-list {
+    width: 212px;
+    top: 40px !important;
+    left: 172px !important;
+  }
+  
+  #logged-in-user {
+    border-bottom: 2px solid var(--cometchat-border-color-default, #E8E8E8);
+  }
+  
+  #logged-in-user .cometchat-menu-list__sub-menu-item-title,
+  #logged-in-user .cometchat-menu-list__sub-menu-list-item {
+    cursor: default;
+  }
+  
+  .cometchat-menu-list__sub-menu-list-item-icon-log-out {
+    background-color: var(--cometchat-error-color, #F44649);
+  }
+  
+  .cometchat-menu-list__sub-menu-item-title-log-out {
+    color: var(--cometchat-error-color, #F44649)
+  }
+  
+  .chat-menu .cometchat .cometchat-menu-list__sub-menu-item-title {
+    cursor: pointer;
+  }
+  
+  .chat-menu .cometchat .cometchat-menu-list__sub-menu {
+    box-shadow: none;
+  }
+  
+  .chat-menu .cometchat .cometchat-menu-list__sub-menu-icon {
+    background-color: var(--cometchat-icon-color-primary, #141414);
+    width: 24px;
+    height: 24px;
+  }
+  .conversations__header {
+    display: flex;
+    width: 100%;
+    padding: 8px 16px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 10px;
+  }
+  .conversations__header__title {
+    overflow: hidden;
+    color: #141414;
+    text-overflow: ellipsis;
+    font: 700 24px Roboto;
+  }
+  .conversations__header .cometchat-button .cometchat-button__icon {
+    background: #141414;
+  }
+  .conversations__header .cometchat-button{
+    width: 24px;
+    border: none;
+    background: transparent;
+    border-radius: 0;
+    display: block;
+  }
+
+
+  /* Style global pour le formulaire */
+.group-form {
+  position: fixed; /* Fixe le formulaire à l'écran */
+  top: 50%; /* Centrer verticalement */
+  left: 50%; /* Centrer horizontalement */
+  transform: translate(-50%, -50%); /* Ajuste pour un centrage parfait */
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+  z-index: 1000; /* Assure que le formulaire soit au-dessus des autres éléments */
+  width: 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Titre du formulaire */
+.group-form h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Style du champ de saisie pour le nom du groupe */
+.group-form-input {
+  width: 100%;
+  padding: 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+/* Effet visuel lorsque le champ est en focus */
+.group-form-input:focus {
+  border-color: #0078d4; /* Bleu au focus */
+  outline: none; /* Retirer l'effet de surbrillance par défaut */
+  box-shadow: 0 0 5px rgba(0, 120, 212, 0.3);
+}
+
+/* Style des boutons dans le formulaire */
+.group-form-buttons {
+  display: flex;
+  justify-content: space-between; /* Espacer les boutons de manière égale */
+  gap: 10px;
+}
+
+/* Style du bouton "Créer" */
+.btn-create {
+  padding: 10px 20px;
+  background-color: var(--cometchat-primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-create:hover {
+  background-color:  var(--cometchat-primary-color);
+}
+
+/* Style du bouton "Annuler" */
+.btn-cancel {
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  color: #555;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancel:hover {
+  background-color: #e0e0e0;
+}
+
+/* Style du bouton "Créer un groupe" (quand le formulaire n'est pas affiché) */
+.btn-create-group {
+  padding: 10px 20px;
+  background-color: var(--cometchat-primary-color);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  transition: background-color 0.3s ease;
+}
+
+.btn-create-group:hover {
+  background-color: var(--cometchat-primary-color);
+}
+
+/* Cacher le formulaire lorsque nécessaire */
+.group-form-container {
+  display: none;
+}
+
+/* Fond semi-transparent pour afficher derrière le formulaire */
+.group-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999; /* Assurer qu'il soit derrière le formulaire */
+}
+
+.user-item {
+  display: flex;
+  justify-content: space-between; /* Pushes avatar/name to the left and checkbox to the right */
+  align-items: center;
+  margin-top: 10px; 
+}
+
+.group-form-buttons {
+  margin-top: 20px;;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Make the avatar round */
+  object-fit: cover;
+  margin-right: 10px; /* Space between avatar and name */
+}
+
+label {
+  margin-left: auto; /* Pushes the checkbox to the far right */
+}
+
+input[type="checkbox"] {
+  margin-left: 10px; /* Optional: adds space between the name and checkbox */
+}
